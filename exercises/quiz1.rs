@@ -13,10 +13,18 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+// ~I AM NOT DONE
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(num: i32) -> i32 {
+    if num > 0 && num <= 40 {
+        num*2
+    }else if num > 40{
+        num
+    }else{
+        panic!("输入有误")
+    }
+}
 
 // Don't modify this function!
 #[test]
